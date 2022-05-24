@@ -1,13 +1,365 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'DanciRighteous';
+  /* background-color: #a1c3ff; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.my-pic img{
+  border-radius: 100px;
+  position: relative;
+  max-width: 100%;
+  /* background-color: #333; */
+  /* align-self: flex-end;
+  flex-basis: 200px; */
+  /* flex-grow: 2; */
 }
+
+.projects h1{
+  margin-top: 30px;
+  text-decoration: underline;
+  margin-left: 615px;
+}
+
+.about-me p{
+  margin: 25px 50px 75px;
+}
+
+.about-me h1 {
+  align-items: center;
+  position: relative;
+  margin-left: 600px;
+}
+
+.details h1{
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.details span{
+  color: red;
+  margin-right: 10px;
+}
+.details p{
+  color: rgb(85, 85, 85);
+  line-height: 15px;
+  margin-top: 5px;
+}
+
+.about-image img {
+  border-radius: 100px;
+}
+
+.download{
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  border: 2px;
+}
+.download:hover{
+  color: rgb(127, 117, 180);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.about-me {
+  margin-top: 30px;
+  text-decoration: underline;
+  
+}
+
+.flex-about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexAbout{
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border: 2px solid black;
+  width: 50%;
+  justify-content: center;
+}
+
+.about-image {
+  display: flex;
+  position: relative;
+}
+
+.flex-container div {
+  background-color: black;
+  color: white;
+  width: 100px;
+  margin: 10%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  flex-basis: 100%;
+  border: 1px solid black
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts {
+  margin-top: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contacts label {
+  margin-top: 30px;
+  text-align: left;
+  display: block;
+  text-decoration: none;
+}
+
+.contacts h1 {
+  text-decoration: underline;
+}
+
+.email input, .email textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 5;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.email form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ddd;
+  height: 50%;
+}
+
+/* form {
+  background-color: #04AA6D;
+  height: 50%;
+  margin-top: 50px;
+} */
+
+.about-main-container{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  /* min-height: 100vh; */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.home-container {
+  margin: 0 auto;
+  display: flex;
+  /* width: 90%; */
+  /* max-width: 900px; */
+  flex-direction: row;
+  /* height: 100%; */
+  justify-content: center;
+  align-items: center;
+  /* background-color: #333; */
+  padding: 30px;
+}
+
+.contact-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #e9f0ed;
+  padding: 6px 10px;
+  flex-direction: row;
+  margin-top: 50px;
+  float: left;
+  /* max-height: 150px; */
+  /* background-color: #04AA6D; */
+}
+
+.details {
+  position: relative;
+  margin-top: 200px;
+  /* margin-left: 200px; */
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+}
+
+.topnav-links {
+  justify-content: end;
+}
+
+.topnav a {
+  float: left;
+  /* display: block; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  /* justify-content: end; */
+}
+
+.topnav div {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .topnav .topnav-links{
+    display: none !important;
+  }
+  .topnav .icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* .flex-container div {
+    background-color: black;
+    color: white;
+    width: 100px;
+    margin: 10%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    flex-basis: 100%;
+    border: 1px solid black;
+    display: block;
+    align-items: center;
+  } */
+
+  /* .about-me h1 {
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  } */
+
+  .about-image img{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+  }
+
+  .my-pic img{
+    max-width: 300%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  body {
+    background-color: lightblue;
+  }
+
+  .about-main-container{
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* justify-content: left; */
+    align-items: center;
+  }
+
+  .home-container {
+    /* margin-top: 50px; */
+    display: flex;
+    /* flex-shrink: 100px; */
+    width: 90%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details {
+    flex: 1 0 50px;
+    /* background-color: #333  ; */
+  }
+
+  .flex-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+/* 
+    .icon:active {
+     color: yellow;
+     position: absolute;
+      right: 0;
+      top: 0;
+      float: none;
+      display: block;
+      text-align: left;
+    } */
+   }
+
+} 
