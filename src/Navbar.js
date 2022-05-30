@@ -1,4 +1,4 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -30,12 +30,9 @@ const Navbar = () => {
                 <div className="icon" onClick={ () => handleClick() }>
                     <i className="fa fa-bars" style={{width: 5, height: 5}}/>
                 </div>
-                {/* <Link to="contacts"><i class="fa fa-bars"></i></Link>
-                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>  */}
+                
             </div>    
     );
 }
  
-export default Navbar
+export default Navbar;

@@ -7,7 +7,15 @@ const Home = () => {
                 <div className="details">
                     <p className='hello'>----- HI</p>
                     <h1>I'm <span>Raymund</span>Capule</h1>
-                    <p>A Jr. Web Developer working at Iscale Techologies</p>
+                    <div className='job-title'> 
+                       <div className='job-wrapper'>
+                            <div className='job-item'>Mac Support</div>
+                            <div className='job-item'>Quality Assurance</div>
+                             <div className='job-item'>Windows Support</div>
+                            <div className='job-item'>Web Development</div>
+                       </div>
+                    </div>   
+                    <p>A Jr. Web Developer training at Iscale Techologies</p>
                     <button className='download'>DOWNLOAD CV</button>
                 </div>
                 <div className="my-pic">
